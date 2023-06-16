@@ -8,12 +8,13 @@ const NavBar = () => {
   const [user] = useAuthState(auth);
 
   const googleSignIn = () => {
-  const provider = new GoogleAuthProvider();
-  signInWithRedirect(auth, provider);
-};
-const signOut = () => {
-  auth.signOut();
-};
+    const provider = new GoogleAuthProvider();
+    signInWithRedirect(auth, provider);
+  };
+
+  const signOut = () => {
+    auth.signOut();
+  };
 
   return (
     <nav className="nav-bar">
