@@ -11,17 +11,24 @@ const Welcome = () => {
 
   return (
     <main className="welcome">
-      <h2>Welcome to my Chat App.</h2>
-      <img src="/logo512.png" alt="ReactJs logo" width={50} height={50} />
-      <p>Sign in with Google to chat with your friends.</p>
-      <button className="sign-in">
-        <img
-          onClick={googleSignIn}
-          src={GoogleSignin}
-          alt="sign in with google"
-          type="button"
-        />
-      </button>
+      
+      {/* <img src="/logo512.png" alt="ReactJs logo" width={50} height={50} /> */}
+      <div class="card">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="card-inner">
+      <h1>Welcome to my Chat App.</h1>
+      <br />
+      <h3>Click the START button below to sign in with Google.</h3>
+      </div>
+      </div>
+      
+    
+    
+    <button onClick={googleSignIn} data-text="Awesome" class="button">
+    <span class="actual-text">&nbsp;start&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;start&nbsp;</span>
+    </button>
     </main>
   );
 };
