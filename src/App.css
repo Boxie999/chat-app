@@ -25,6 +25,7 @@ input {
   background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: aliceblue;
+  
 }
 
 h1, h3 {
@@ -143,7 +144,7 @@ h1, h3 {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
-.sign-out {
+.sign-out, .sign-in {
   padding: 5px 10px;
   border-radius: 5px;
   color: #88dded;
